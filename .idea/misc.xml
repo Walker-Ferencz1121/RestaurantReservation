@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Yuan renzhou/RestaurantReservation/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Yuan renzhou/RestaurantReservation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Yuan renzhou/RestaurantReservation/app/src/main/res/layout/activity_main.xml" value="0.28532608695652173" />
         <entry key="..\:/Users/wsfer/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_main.xml" value="0.28306159420289856" />
       </map>
     </option>
