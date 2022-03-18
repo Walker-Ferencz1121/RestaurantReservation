@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">RestaurantReservation</string>
     <string name="restaurant_reservation_application">Restaurant Reservation Application</string>
+    <string name="help_instructions">Tap on a green table to reserve that table for seating.</string>
+    <string name="help_button">Help</string>
 </resources>
