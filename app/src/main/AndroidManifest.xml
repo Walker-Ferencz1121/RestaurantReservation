@@ -11,6 +11,9 @@
         android:theme="@style/Theme.RestaurantReservation">
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".starting_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
