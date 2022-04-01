@@ -45,7 +45,9 @@
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:onClick="onClick"
+            />
 
         <Button
             android:id="@+id/button2"
@@ -58,7 +60,9 @@
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:onClick="onClick"
+            />
 
         <Button
             android:id="@+id/button3"
@@ -71,7 +75,9 @@
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button1"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:onClick="onClick"
+            />
 
         <Button
             android:id="@+id/button4"
@@ -84,7 +90,9 @@
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button2"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:onClick="onClick"
+            />
 
         <Button
             android:id="@+id/button5"
@@ -97,7 +105,9 @@
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:onClick="onClick"
+            />
 
         <Button
             android:id="@+id/button6"
