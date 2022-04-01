@@ -1,13 +1,11 @@
 <resources>
     <string name="app_name">RestaurantReservation</string>
     <string name="restaurant_reservation_application">Restaurant Reservation Application</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="question1">How many people will be attending?</string>
+    <string name="question2">Time of arrival</string>
+    <string name="question3">What is the reservation name?</string>
+    <string name="time">Estimated time</string>
+    <string name="reserve">Reserve Table</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
 </resources>
