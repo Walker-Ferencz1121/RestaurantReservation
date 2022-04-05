@@ -23,13 +23,13 @@
         android:id="@+id/answer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="5"
-        android:hint="4"
-        android:inputType="number"
-        android:textAlignment="center"
         android:layout_below="@id/question1"
         android:layout_marginBottom="15dp"
-        />
+        android:ems="5"
+        android:hint="Nick"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center" />
     <TextView
         android:id="@+id/question2"
         android:layout_width="wrap_content"
@@ -40,12 +40,12 @@
         />
 
     <RadioGroup
-        android:id="@+id/time"
+        android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
         android:orientation="horizontal"
-        android:layout_toRightOf="@id/answer2" />
+        />
 
     <RadioButton
         android:id="@+id/dirty"
@@ -53,7 +53,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:layout_toRightOf="@+id/answer2"
         />
 
     <RadioButton
@@ -87,19 +86,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question3"
-        android:layout_below="@id/answer2"
+        android:layout_below="@id/closed"
         android:textSize="23dp"
         />
+
     <EditText
         android:id="@+id/answer3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="6"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
         android:layout_below="@id/question3"
         android:layout_marginBottom="15dp"
-        />
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        tools:ignore="SpeakableTextPresentCheck" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

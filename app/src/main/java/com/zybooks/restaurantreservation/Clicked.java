@@ -20,9 +20,8 @@ public class Clicked extends AppCompatActivity {
     private final static int HOURS = 12;
 
     private EditText mNumAttendEditText;
-    private EditText timeEditText;
     private EditText nameEditText;
-    private RadioGroup timeZone;
+    private RadioGroup tableStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +29,8 @@ public class Clicked extends AppCompatActivity {
         setContentView(R.layout.activity_clicked);
 
         mNumAttendEditText = findViewById(R.id.answer1);
-        timeEditText = findViewById(R.id.answer2);
+        tableStatus = findViewById(R.id.status);
         nameEditText = findViewById(R.id.answer3);
-        timeZone = findViewById(R.id.time);
 
 
 
