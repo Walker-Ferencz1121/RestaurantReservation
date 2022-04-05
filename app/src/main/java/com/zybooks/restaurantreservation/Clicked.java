@@ -37,6 +37,8 @@ public class Clicked extends AppCompatActivity {
 
 
         ;}
+
+        
     public void onClick(View view){
         int numAttend;
 
