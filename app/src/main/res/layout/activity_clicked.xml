@@ -44,8 +44,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:orientation="horizontal"
-            />
+        android:orientation="horizontal">
+
 
     <RadioButton
         android:id="@+id/dirty"
@@ -79,13 +79,14 @@
         android:layout_toRightOf="@+id/reserved"
         android:text="@string/closed"
             />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/question3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question3"
-        android:layout_below="@id/closed"
+        android:layout_below="@id/status"
         android:textSize="23dp"
         />
 
