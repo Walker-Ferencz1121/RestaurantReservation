@@ -19,6 +19,8 @@ import android.view.View;
 
 public class Clicked extends AppCompatActivity {
 
+    public static final String EXTRA_COLOR = "com.zybooks.lightsout.color";
+
     private final static int HOURS = 12;
 
     private EditText mNumAttendEditText;
@@ -54,7 +56,6 @@ public class Clicked extends AppCompatActivity {
 
         class ColorActivity extends AppCompatActivity {
 
-            public static final String EXTRA_COLOR = "com.zybooks.lightsout.color";
 
             @Override
             protected void onCreate(Bundle savedInstanceState) {
