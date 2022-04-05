@@ -45,41 +45,41 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
         android:orientation="horizontal"
-        />
+            />
 
-    <RadioButton
+        <RadioButton
         android:id="@+id/dirty"
         android:text="@string/dirty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        />
+            />
 
-    <RadioButton
+        <RadioButton
         android:id="@+id/open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
         android:layout_toRightOf="@+id/dirty"
         android:text="@string/open"
-        />
+            />
 
-    <RadioButton
+        <RadioButton
         android:id="@+id/reserved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
         android:layout_toRightOf="@+id/open"
         android:text="@string/reserved"
-        />
-    <RadioButton
+            />
+        <RadioButton
         android:id="@+id/closed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
         android:layout_toRightOf="@+id/reserved"
         android:text="@string/closed"
-        />
+            />
 
     <TextView
         android:id="@+id/question3"
