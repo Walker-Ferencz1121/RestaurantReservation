@@ -47,13 +47,12 @@
         android:orientation="horizontal"
             />
 
-        <RadioButton
+    <RadioButton
         android:id="@+id/dirty"
-        android:text="@string/dirty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-            />
+        android:text="@string/dirty" />
 
         <RadioButton
         android:id="@+id/open"
