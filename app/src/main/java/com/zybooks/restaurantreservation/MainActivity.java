@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Clicked.class);
         startActivity(intent);
     }
+
+    public void onChangeColorClick(View view) {
+        Intent intent = new Intent(this, Clicked.class);
+        intent.putExtra(Clicked.EXTRA_COLOR, mLightOnColorId);
+        mColorResultLauncher.launch(intent);
+    }
 }

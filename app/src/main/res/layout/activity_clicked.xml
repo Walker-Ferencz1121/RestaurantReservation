@@ -104,10 +104,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reserve"
+        android:text="@string/update"
         android:layout_below="@id/answer3"
         android:layout_centerHorizontal="true"
-        android:onClick="onClick"
+        android:onClick="onColorSelected"
         />
 
 

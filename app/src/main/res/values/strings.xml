@@ -5,9 +5,9 @@
     <string name="question2">What is the Status of the table?</string>
     <string name="question3">Is this table be reserved?</string>
     <string name="time">Estimated time</string>
-    <string name="reserve">Update Table</string>
+    <string name="update">Update Table</string>
     <string name="dirty">Dirty</string>
     <string name="open">Open</string>
-    <string name="closed">Closed</string>
+    <string name="closed">Taken</string>
     <string name="reserved">Reserved</string>
 </resources>
