@@ -23,13 +23,13 @@
         android:id="@+id/answer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="5"
-        android:hint="4"
-        android:inputType="number"
-        android:textAlignment="center"
         android:layout_below="@id/question1"
         android:layout_marginBottom="15dp"
-        />
+        android:ems="5"
+        android:hint="Nick"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center" />
     <TextView
         android:id="@+id/question2"
         android:layout_width="wrap_content"
@@ -38,69 +38,76 @@
         android:textSize="23dp"
         android:layout_below="@id/answer1"
         />
-    <EditText
-        android:id="@+id/answer2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="5"
-        android:hint="4:00"
-        android:inputType="time"
-        android:textAlignment="center"
-        android:layout_below="@id/question2"
-        android:layout_marginBottom="15dp"
-        />
 
     <RadioGroup
-        android:id="@+id/time"
+        android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:orientation="horizontal"
-        android:layout_toRightOf="@id/answer2" />
+        android:orientation="horizontal">
+
 
     <RadioButton
-        android:id="@+id/am"
-        android:text="@string/am"
+        android:id="@+id/dirty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:layout_toRightOf="@+id/answer2"
-        />
+        android:text="@string/dirty" />
 
-    <RadioButton
-        android:id="@+id/pm"
+        <RadioButton
+        android:id="@+id/open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:layout_toRightOf="@+id/am"
-        android:text="@string/pm"
-        />
+        android:layout_toRightOf="@+id/dirty"
+        android:text="@string/open"
+            />
+
+        <RadioButton
+        android:id="@+id/reserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question2"
+        android:layout_toRightOf="@+id/open"
+        android:text="@string/reserved"
+            />
+        <RadioButton
+        android:id="@+id/closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question2"
+        android:layout_toRightOf="@+id/reserved"
+        android:text="@string/closed"
+            />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/question3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question3"
-        android:layout_below="@id/answer2"
+        android:layout_below="@id/status"
         android:textSize="23dp"
         />
+
     <EditText
         android:id="@+id/answer3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="6"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
         android:layout_below="@id/question3"
         android:layout_marginBottom="15dp"
-        />
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        tools:ignore="SpeakableTextPresentCheck" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reserve"
+        android:text="@string/update"
         android:layout_below="@id/answer3"
         android:layout_centerHorizontal="true"
-        android:onClick="onClick"
+        android:onClick="onColorSelected"
         />
 
 

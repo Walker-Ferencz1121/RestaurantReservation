@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">RestaurantReservation</string>
     <string name="restaurant_reservation_application">Restaurant Reservation Application</string>
-    <string name="question1">How many people will be attending?</string>
-    <string name="question2">Time of arrival</string>
-    <string name="question3">What is the reservation name?</string>
+    <string name="question1">Which employee is assigned to this table?</string>
+    <string name="question2">What is the Status of the table?</string>
+    <string name="question3">Is this table be reserved?</string>
     <string name="time">Estimated time</string>
-    <string name="reserve">Reserve Table</string>
-    <string name="am">AM</string>
-    <string name="pm">PM</string>
+    <string name="update">Update Table</string>
+    <string name="dirty">Dirty</string>
+    <string name="open">Open</string>
+    <string name="closed">Taken</string>
+    <string name="reserved">Reserved</string>
 </resources>
