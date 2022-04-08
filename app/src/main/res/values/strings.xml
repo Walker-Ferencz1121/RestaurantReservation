@@ -10,4 +10,7 @@
     <string name="open">Open</string>
     <string name="closed">Taken</string>
     <string name="reserved">Reserved</string>
+    <string name="help_instructions">Click on a table to seat guests!</string>
+    <string name="help_button">Help</string>
+    <string name="back_button">Back</string>
 </resources>

@@ -123,6 +123,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button4"
             tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/help_button"
+            style="@style/GameOptionButton"
+            android:text="@string/help_button"
+            android:onClick="onHelpClick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/button6"
+            tools:visibility="visible" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

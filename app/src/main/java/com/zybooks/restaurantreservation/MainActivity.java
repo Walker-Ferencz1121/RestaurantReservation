@@ -24,11 +24,15 @@ public class MainActivity extends AppCompatActivity {
 
         mLightOnColorId = R.color.open;
         mLightonColor = ContextCompat.getColor(this, R.color.open);
-
     }
 
     public void onClick(View view) {
         Intent intent = new Intent(this, Clicked.class);
+        startActivity(intent);
+    }
+
+    public void onHelpClick(View view) {
+        Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);
     }
 
