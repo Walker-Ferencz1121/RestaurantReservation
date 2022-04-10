@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantReservation">
         <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
             android:name=".Clicked"
             android:exported="false" />
         <activity
