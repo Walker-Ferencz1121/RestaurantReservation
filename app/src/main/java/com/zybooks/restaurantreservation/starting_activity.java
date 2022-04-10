@@ -27,4 +27,9 @@ public class starting_activity extends AppCompatActivity {
             }
         });
     }
+
+    public void onHelpClick(View view) {
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
+    }
 }
