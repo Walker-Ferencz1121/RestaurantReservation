@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/floor1">
 
     <TextView
         android:id="@+id/Greeting"
@@ -17,10 +18,12 @@
         android:textSize="24sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintVertical_bias="0.002"
         tools:visibility="visible" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,85 +41,80 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="87dp"
-            android:text="T1"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="108dp"
             android:backgroundTint="@color/blue"
+            android:onClick="onClick"
+            android:text="T1"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible"
-            android:onClick="onClick"
-            />
+            tools:visibility="visible" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="87dp"
-            android:layout_marginEnd="35dp"
-            android:text="T2"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="56dp"
             android:backgroundTint="@color/blue"
+            android:onClick="onClick"
+            android:text="T2"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible"
-            android:onClick="onClick"
-            />
+            tools:visibility="visible" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="124dp"
-            android:text="T3"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="56dp"
             android:backgroundTint="@color/blue"
+            android:onClick="onClick"
+            android:text="T3"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button1"
-            tools:visibility="visible"
-            android:onClick="onClick"
-            />
+            tools:visibility="visible" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="35dp"
-            android:text="T4"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="56dp"
             android:backgroundTint="@color/blue"
+            android:onClick="onClick"
+            android:text="T4"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button2"
-            tools:visibility="visible"
-            android:onClick="onClick"
-            />
+            tools:visibility="visible" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="124dp"
-            android:text="T5"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="88dp"
             android:backgroundTint="@color/blue"
+            android:onClick="onClick"
+            android:text="T5"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3"
-            tools:visibility="visible"
-            android:onClick="onClick"
-            />
+            tools:visibility="visible" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="35dp"
-            android:text="T6"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="56dp"
             android:backgroundTint="@color/blue"
+            android:text="T6"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button4"
