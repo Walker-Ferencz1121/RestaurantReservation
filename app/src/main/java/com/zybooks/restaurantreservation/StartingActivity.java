@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class starting_activity extends AppCompatActivity {
+public class StartingActivity extends AppCompatActivity {
 
 
     Button start;
@@ -23,7 +23,7 @@ public class starting_activity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(starting_activity.this, MainActivity.class));
+                startActivity(new Intent(StartingActivity.this, MainActivity.class));
             }
         });
     }
