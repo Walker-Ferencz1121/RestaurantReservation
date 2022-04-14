@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3104166666666667" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_floor2.xml" value="0.11770833333333333" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_main.xml" value="0.14311043566362716" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_starting.xml" value="0.1458966565349544" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_table_menu.xml" value="0.1458966565349544" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_trial_starting.xml" value="0.264" />
+        <entry key="..\:/Users/17065/AndroidStudioProjects/RestaurantReservation/app/src/main/res/menu/table_menu.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/David/StudioProjects/RestaurantReservation/app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/silve/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_clicked.xml" value="0.1" />
         <entry key="..\:/Users/silve/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_main.xml" value="0.12447916666666667" />
         <entry key="..\:/Users/wsfer/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_main.xml" value="0.28306159420289856" />
-        <entry key="..\:/Users/wsfer/AndroidStudioProjects/RestaurantReservation/app/src/main/res/layout/activity_starting.xml" value="0.1" />
       </map>
     </option>
   </component>
