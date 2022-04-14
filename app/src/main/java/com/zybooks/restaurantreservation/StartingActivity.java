@@ -11,22 +11,34 @@ import android.widget.TextView;
 public class StartingActivity extends AppCompatActivity {
 
 
-    Button start;
+    Button floor1;
+    Button floor2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting);
 
-        start = (Button) findViewById(R.id.continue_button);
+        floor1 = (Button) findViewById(R.id.f1);
+        floor2 = (Button) findViewById(R.id.f2);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        floor1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(StartingActivity.this, MainActivity.class));
             }
         });
-    }
+
+        floor2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
+
+        }
+
 
     public void onHelpClick(View view) {
         Intent intent = new Intent(this, HelpActivity.class);

@@ -18,7 +18,7 @@ public class TestingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting);
 
-        start = (Button) findViewById(R.id.continue_button);
+        start = (Button) findViewById(R.id.f1);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
