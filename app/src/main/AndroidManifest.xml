@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantReservation">
         <activity
+            android:name=".patioActivity"
+            android:exported="false" />
+        <activity
             android:name=".ColorActivity"
             android:exported="false" />
         <activity
-            android:name=".floor2"
+            android:name=".floor2Activity"
             android:exported="false" />
         <activity
             android:name=".HelpActivity"
