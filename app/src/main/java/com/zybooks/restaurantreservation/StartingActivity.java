@@ -32,12 +32,12 @@ public class StartingActivity extends AppCompatActivity {
         floor2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                startActivity(new Intent(StartingActivity.this, floor2.class));
             }
         });
 
         }
+
 
 
     public void onHelpClick(View view) {
