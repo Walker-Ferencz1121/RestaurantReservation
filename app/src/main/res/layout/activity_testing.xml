@@ -24,20 +24,20 @@
         tools:layout_editor_absoluteY="248dp" />
 
     <Button
-        android:id="@+id/TableB36"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:text="T"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="367dp" />
-
-    <Button
         android:id="@+id/TableB48"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:text="T"
         tools:layout_editor_absoluteX="337dp"
         tools:layout_editor_absoluteY="488dp" />
+
+    <Button
+        android:id="@+id/TableB36"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="T"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="367dp" />
 
     <Button
         android:id="@+id/TableB30"
