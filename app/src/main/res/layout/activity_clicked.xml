@@ -52,7 +52,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:text="@string/dirty" />
+        android:text="@string/dirty"
+        android:onClick="onChangeColorClick"/>
 
         <RadioButton
         android:id="@+id/open"

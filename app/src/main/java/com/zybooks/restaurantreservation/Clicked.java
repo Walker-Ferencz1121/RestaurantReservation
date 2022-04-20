@@ -80,17 +80,17 @@ public class Clicked extends AppCompatActivity {
                 setContentView(R.layout.activity_clicked);
                 // Get the color ID from MainActivity
                 Intent intent = getIntent();
-                int colorId = intent.getIntExtra(EXTRA_COLOR, R.color.open);
+                int colorId = intent.getIntExtra(EXTRA_COLOR, R.color.green);
 
                 // Select the radio button matching the color ID
                 int radioId = R.id.open;
-                if (colorId == R.color.dirty) {
+                if (colorId == R.color.yellow) {
                     radioId = R.id.dirty;
                 }
-                else if (colorId == R.color.closed) {
+                else if (colorId == R.color.red) {
                     radioId = R.id.closed;
                 }
-                else if (colorId == R.color.reserved) {
+                else if (colorId == R.color.blue) {
                     radioId = R.id.reserved;
                 }
 
@@ -99,15 +99,15 @@ public class Clicked extends AppCompatActivity {
             }
 
             public void onColorSelected(View view) {
-                int colorId = R.color.open;
+                int colorId = R.color.green;
                 if (view.getId() == R.id.dirty) {
-                    colorId = R.color.dirty;
+                    colorId = R.color.yellow;
                 }
                 else if (view.getId() == R.id.closed) {
-                    colorId = R.color.closed;
+                    colorId = R.color.red;
                 }
                 else if (view.getId() == R.id.reserved) {
-                    colorId = R.color.reserved;
+                    colorId = R.color.blue;
                 }
 
                 Intent intent = new Intent();

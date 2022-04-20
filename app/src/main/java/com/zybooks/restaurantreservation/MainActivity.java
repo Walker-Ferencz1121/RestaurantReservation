@@ -25,8 +25,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLightOnColorId = R.color.open;
-        mLightonColor = ContextCompat.getColor(this, R.color.open);
+        mLightOnColorId = R.color.green;
+        mLightonColor = ContextCompat.getColor(this, R.color.green);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void onClick(View view) {
@@ -44,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Clicked.EXTRA_COLOR, mLightOnColorId);
         mColorResultLauncher.launch(intent);
     }
+
     ActivityResultLauncher<Intent> mColorResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -52,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     if (result.getResultCode()== Activity.RESULT_OK){
                         Intent data = result.getData();
                         if (data != null){
-                            mLightOnColorId = data.getIntExtra(Clicked.EXTRA_COLOR,R.color.open);
+                            mLightOnColorId = data.getIntExtra(Clicked.EXTRA_COLOR,R.color.green);
                             mLightonColor = ContextCompat.getColor(MainActivity.this, mLightOnColorId);
                             setButtonColors();
                         }
@@ -60,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+
     private void setButtonColors(){
 
     }
