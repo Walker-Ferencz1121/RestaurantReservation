@@ -12,21 +12,25 @@ import androidx.core.content.ContextCompat;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int mLightOnColorId;
-    private int mLightonColor;
+    private int tableColorId;
+    private int tableColor;
+    private Button ID;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLightOnColorId = R.color.green;
-        mLightonColor = ContextCompat.getColor(this, R.color.green);
+        tableColorId = R.color.green;
+        tableColor = ContextCompat.getColor(this, R.color.green);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -43,22 +47,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+        ID = (Button)findViewById(view.getId());
         Intent intent = new Intent(this, Clicked.class);
-        startActivity(intent);
+        intent.putExtra(ColorActivity.EXTRA_COLOR, tableColorId);
+        tableColorResultLauncher.launch(intent);
     }
-
-    public void onHelpClick(View view) {
-        Intent intent = new Intent(this, HelpActivity.class);
-        startActivity(intent);
-    }
-
-    public void onChangeColorClick(View view) {
-        Intent intent = new Intent(this, Clicked.class);
-        intent.putExtra(Clicked.EXTRA_COLOR, mLightOnColorId);
-        mColorResultLauncher.launch(intent);
-    }
-
-    ActivityResultLauncher<Intent> mColorResultLauncher = registerForActivityResult(
+    ActivityResultLauncher<Intent> tableColorResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -66,16 +60,20 @@ public class MainActivity extends AppCompatActivity {
                     if (result.getResultCode()== Activity.RESULT_OK){
                         Intent data = result.getData();
                         if (data != null){
-                            mLightOnColorId = data.getIntExtra(Clicked.EXTRA_COLOR,R.color.green);
-                            mLightonColor = ContextCompat.getColor(MainActivity.this, mLightOnColorId);
+                            tableColorId = data.getIntExtra(Clicked.EXTRA_COLOR,R.color.green);
+                            tableColor = ContextCompat.getColor(MainActivity.this, tableColorId);
                             setButtonColors();
                         }
                     }
-
                 }
             });
-
     private void setButtonColors(){
-
+        ID.setBackgroundColor(tableColor);
     }
+
+    public void onHelpClick(View view) {
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
+    }
+
 }

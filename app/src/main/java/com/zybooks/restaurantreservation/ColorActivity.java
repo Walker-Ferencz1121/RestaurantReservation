@@ -49,6 +49,8 @@ public class ColorActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.putExtra(EXTRA_COLOR, colorId);
         setResult(RESULT_OK, intent);
+    }
+    public void finish(View view){
         finish();
     }
 }

@@ -12,10 +12,10 @@
     <color name="magentaish">#9C27B0</color>
     <color name="maroon">#FFB02737</color>
 
-    <!--<color name="open">#2EDA1A</color>
+    <color name="open">#2EDA1A</color>
     <color name="dirty">#E8D52A</color>
     <color name="reserved">#589BE3</color>
-    <color name="closed">#738884</color>-->
+    <color name="closed">#738884</color>
 
     <color name="red">#FF0000</color>
     <color name="blue">#3F51B5</color>

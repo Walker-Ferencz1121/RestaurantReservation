@@ -16,6 +16,7 @@
         android:text="@string/question1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:freezesText="true"
         android:textSize="23dp"
         />
 
@@ -44,72 +45,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/question2"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-
-    <RadioButton
-        android:id="@+id/dirty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question2"
-        android:text="@string/dirty"
-        android:onClick="onChangeColorClick"/>
 
         <RadioButton
-        android:id="@+id/open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question2"
-        android:layout_toRightOf="@+id/dirty"
-        android:text="@string/open"
+            android:id="@+id/dirty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question2"
+            android:onClick="onColorSelected"
+            android:text="@string/dirty" />
+
+            <RadioButton
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question2"
+            android:layout_toRightOf="@+id/dirty"
+            android:text="@string/open"
+            android:onClick="onColorSelected"
             />
 
-        <RadioButton
-        android:id="@+id/reserved"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question2"
-        android:layout_toRightOf="@+id/open"
-        android:text="@string/reserved"
+            <RadioButton
+            android:id="@+id/reserved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question2"
+            android:layout_toRightOf="@+id/open"
+            android:text="@string/reserved"
+            android:onClick="onColorSelected"
             />
-        <RadioButton
-        android:id="@+id/closed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question2"
-        android:layout_toRightOf="@+id/reserved"
-        android:text="@string/closed"
+         <RadioButton
+            android:id="@+id/closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question2"
+            android:layout_toRightOf="@+id/reserved"
+            android:text="@string/closed"
+            android:onClick="onColorSelected"
             />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/question3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/question3"
-        android:layout_below="@id/status"
-        android:textSize="23dp"
-        />
-
-    <EditText
-        android:id="@+id/answer3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question3"
-        android:layout_marginBottom="15dp"
-        android:ems="6"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        tools:ignore="SpeakableTextPresentCheck" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/update"
-        android:layout_below="@id/answer3"
-        android:layout_centerHorizontal="true"
-        android:onClick="onColorSelected"
-        />
 
 
 
