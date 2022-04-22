@@ -11,55 +11,64 @@
         android:id="@+id/f1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="332dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="214dp"
         android:backgroundTint="#141CB9"
         android:fontFamily="sans-serif-black"
-        android:text="Floor 1"
+        android:text="@string/floor_1"
         android:textAllCaps="true"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/f2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="158dp"
         android:backgroundTint="#141CB9"
         android:fontFamily="sans-serif-black"
-        android:text="Floor 2"
+        android:text="@string/floor_2"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/f1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/p1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="102dp"
         android:backgroundTint="#141CB9"
         android:fontFamily="sans-serif-black"
-        android:text="Patio"
+        android:text="@string/patio"
         android:textColor="#000000"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/f2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/help_button"
         style="@style/GameOptionButton"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="49dp"
         android:backgroundTint="#EC6363"
         android:fontFamily="sans-serif-black"
         android:onClick="onHelpClick"
@@ -68,19 +77,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/p1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:layout_width="415dp"
+        android:layout_height="380dp"
+        android:layout_marginBottom="223dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/f1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/theforloop" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

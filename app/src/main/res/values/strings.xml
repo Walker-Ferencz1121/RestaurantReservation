@@ -29,4 +29,7 @@
 
     <string name="choose_color">Choose a color:</string>
     <string name="color_button">Change Color</string>
+    <string name="patio">Patio</string>
+    <string name="floor_2">Floor 2</string>
+    <string name="floor_1">Floor 1</string>
 </resources>
