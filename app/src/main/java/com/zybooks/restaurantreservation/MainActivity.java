@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         ID = (Button)findViewById(view.getId());
         Intent intent = new Intent(this, Clicked.class);
-        intent.putExtra(ColorActivity.EXTRA_COLOR, tableColorId);
+        intent.putExtra(Clicked.EXTRA_COLOR, tableColorId);
         tableColorResultLauncher.launch(intent);
     }
     ActivityResultLauncher<Intent> tableColorResultLauncher = registerForActivityResult(
