@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RestaurantReservation</string>
+    <string name="app_name">The For Loop Restaurant App</string>
     <string name="restaurant_reservation_application">Restaurant Reservation Application</string>
 
     <string name="question1">Which employee is assigned to this table?</string>
