@@ -13,6 +13,7 @@
     <string name="open">Open</string>
     <string name="closed">Taken</string>
     <string name="reserved">Reserved</string>
+    <string name ="howTo">How to use.</string>
 
     <string name="help_instructions">When your shift starts, select the floor that you are assigned. Click on a table to open seating menu, then select desired status of table. The table will changed colors based on the button selected. When your shift is over press the back button to exit and clear tables for next shift.</string>
     <string name="help_button">Help</string>
