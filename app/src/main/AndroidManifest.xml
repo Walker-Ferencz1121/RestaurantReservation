@@ -13,9 +13,6 @@
             android:name=".patioActivity"
             android:exported="false" />
         <activity
-            android:name=".ColorActivity"
-            android:exported="false" />
-        <activity
             android:name=".floor2Activity"
             android:exported="false" />
         <activity
